@@ -322,6 +322,10 @@ a {
     display: none;
 }
 
+.menu-group {
+    display: block;
+}
+
 .menu-column {
     display: block;
 }
@@ -707,11 +711,11 @@ a {
         color: var(--text-light);
     }
 
-    .menu-column {
+    .menu-group {
         display: none;
     }
 
-    .menu-column.active {
+    .menu-group.active {
         display: block;
     }
 
