@@ -131,8 +131,17 @@
             <h2 class="section-title">Our Menu</h2>
             <p class="section-intro">Southern plates made from scratch, served cafeteria-style. Plates starting at <strong>$12.99</strong></p>
             
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-target="menu-plates">Plates</button>
+                <button class="menu-tab" data-target="menu-sandwiches">Sandwiches</button>
+                <button class="menu-tab" data-target="menu-salads">Salads</button>
+                <button class="menu-tab" data-target="menu-kids">Kids</button>
+                <button class="menu-tab" data-target="menu-drinks">Drinks</button>
+                <button class="menu-tab" data-target="menu-desserts">Desserts</button>
+            </div>
+
             <div class="menu-grid">
-                <div class="menu-column">
+                <div class="menu-column active" id="menu-plates">
                     <h3 class="menu-category">Signature Dish</h3>
                     <div class="menu-item">
                         <h4>Chicken Fried Steak</h4>
@@ -157,7 +166,9 @@
                         <p class="menu-description">Rotating selections of fresh seafood.</p>
                     </div>
                     <p class="menu-note">Daily specials rotate — call for today's menu</p>
+                </div>
 
+                <div class="menu-column" id="menu-sandwiches">
                     <h3 class="menu-category">Sandwiches & More</h3>
                     <div class="menu-item">
                         <h4>Cheeseburger</h4>
@@ -209,7 +220,7 @@
                     </div>
                 </div>
 
-                <div class="menu-column">
+                <div class="menu-column" id="menu-salads">
                     <h3 class="menu-category">Salads</h3>
                     <div class="menu-item">
                         <h4>Fried Chicken Salad</h4>
@@ -223,7 +234,9 @@
                         <h4>Chef Salad</h4>
                         <p class="menu-description">Fresh mix of greens, vegetables, and proteins.</p>
                     </div>
+                </div>
 
+                <div class="menu-column" id="menu-kids">
                     <h3 class="menu-category">Kids' Menu</h3>
                     <div class="menu-item">
                         <h4>Peanut Butter & Jelly</h4>
@@ -233,7 +246,9 @@
                         <h4>Chicken Nuggets (6)</h4>
                         <p class="menu-description">Breaded chicken nuggets, made from white meat chicken, fried until golden.</p>
                     </div>
+                </div>
 
+                <div class="menu-column" id="menu-drinks">
                     <h3 class="menu-category">Beverages</h3>
                     <div class="menu-item">
                         <h4>Soft Drinks</h4>
@@ -259,7 +274,9 @@
                         <h4>Tea (Gallon)</h4>
                         <p class="menu-description">Sweet Tea Gallon or Unsweetened Tea Gallon available.</p>
                     </div>
+                </div>
 
+                <div class="menu-column" id="menu-desserts">
                     <h3 class="menu-category">Homemade Desserts</h3>
                     <div class="menu-item">
                         <h4>Bread Pudding</h4>

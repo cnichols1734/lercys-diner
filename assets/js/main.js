@@ -32,4 +32,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    const menuTabs = document.querySelectorAll('.menu-tab');
+    const menuColumns = document.querySelectorAll('.menu-column');
+
+    menuTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+
+            menuTabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+
+            menuColumns.forEach(column => {
+                if (column.id === target) {
+                    column.classList.add('active');
+                } else {
+                    column.classList.remove('active');
+                }
+            });
+        });
+    });
 });
