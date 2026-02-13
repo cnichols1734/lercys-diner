@@ -322,6 +322,10 @@ a {
     display: none;
 }
 
+.menu-column {
+    display: block;
+}
+
 .catering-callout {
     background: var(--bg-secondary);
     padding: 1.75rem;
